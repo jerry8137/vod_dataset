@@ -1,0 +1,6 @@
+<launch>
+    <node pkg="rosbag" type="record" name="rosbag_record"
+        args="record -o /home/abekabe/Documents/Jerry/view_of_delft_PUBLIC/rosbags /camera /lidar /radar /tf /tf_static
+        --split --size 1024 "/>
+    <include file="$(find vod_dataset)/launch/read_data.launch"/>
+</launch>

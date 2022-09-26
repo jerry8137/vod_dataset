@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="tf2_ros" type="static_transform_publisher" name="lidar_frame_publisher"
+        args="0.151 -0.461 -0.915 0.47152874 -0.46728706  0.53444633  0.52313532 cam lidar"/>
+    <node pkg="tf2_ros" type="static_transform_publisher" name="radar_frame_publisher"
+        args="0.05283124 0.98100483 1.44445002 0.47320737 -0.47040905  0.53445657  0.5187931 cam radar"/>
+        
+</launch>

@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find vod_dataset)/launch/static_tf.launch"/>
+    <node type="rviz" name="rviz1" pkg="rviz" args="-d $(find vod_dataset)/.rviz/visualize.rviz" />
+    <node name="read_data_node" pkg="vod_dataset" type="read_radar.py" output="screen"/>
+</launch>
